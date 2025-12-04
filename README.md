@@ -246,7 +246,7 @@ This section outlines a typical phased implementation roadmap for the Adaptive S
 
 ---
 
-## 8. Usage Examples (Conceptual)
+## 8. Usage Examples
 
 The exact commands depend on how you wire the scanner, but conceptually a scan looks like:
 
@@ -287,3 +287,4 @@ Planned improvements can include:
   - Add additional metrics or formats (e.g., SARIF) to integrate with more security tools.
 
 Please adapt the file paths, CLI invocation, and configuration details as you evolve the underlying implementation of the Adaptive Secure Code Assistant.
+
