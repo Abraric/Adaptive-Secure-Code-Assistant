@@ -1,0 +1,39 @@
+{
+  "scan_timestamp": "2025-11-22T03:52:45.467967Z",
+  "total_vulnerabilities": 4,
+  "vulnerabilities": [
+    {
+      "file": "C:\\Users\\abrar\\Music\\AdaptiveSecureCodeAssistant\\test_example.py",
+      "line_no": 10,
+      "snippet": "cursor.execute(\"SELECT * FROM users WHERE id = \" + user_id)",
+      "rule": "SQL_INJECTION",
+      "reason": "String concatenation in SQL execute() call"
+    },
+    {
+      "file": "C:\\Users\\abrar\\Music\\AdaptiveSecureCodeAssistant\\test_example.py",
+      "line_no": 10,
+      "snippet": "cursor.execute(\"SELECT * FROM users WHERE id = \" + user_id)",
+      "rule": "SQL_INJECTION",
+      "reason": "String concatenation detected in SQL query context"
+    },
+    {
+      "file": "C:\\Users\\abrar\\Music\\AdaptiveSecureCodeAssistant\\test_example.py",
+      "line_no": 18,
+      "snippet": "cursor.execute(f\"SELECT * FROM users WHERE name = '{username}'\")",
+      "rule": "SQL_INJECTION",
+      "reason": "String interpolation (f-string) in SQL execute() call"
+    },
+    {
+      "file": "C:\\Users\\abrar\\Music\\AdaptiveSecureCodeAssistant\\test_example.py",
+      "line_no": 22,
+      "snippet": "stripe_api_key <removed-for-security>",
+      "rule": "HARDCODED_SECRET",
+      "secret_type": "API_KEY",
+      "entropy_score": 4.82
+    }
+  ],
+  "summary": {
+    "SQL_INJECTION": 3,
+    "HARDCODED_SECRET": 1
+  }
+}
